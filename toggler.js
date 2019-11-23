@@ -14,6 +14,9 @@ function handleClick() {
     // Modifies status contents
     switchIsActive = !switchIsActive;
     switchStatus.innerHTML = switchIsActive ? 'on' : 'off';
+
+    // Toggle aria-checked
+    toggler.setAttribute('aria-checked', switchIsActive);
 }
 
 // Adds keyboard events to the toggle
