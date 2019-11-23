@@ -1,0 +1,25 @@
+/* PAGE APPEARANCE */
+/* (Pretty standard, boring stuff) */
+
+body {
+    background-color: #eeeeee;
+    transition: 0.3s background-color ease-in, 0.3s color ease-in;
+}
+
+body.dark-mode {
+    background-color: #222222;
+    color: #dddddd;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+span.status {
+    font-weight: bold;
+}
