@@ -9,7 +9,7 @@ This is a template to follow for [my blogpost about ARIA](https://blog.benmyers.
 First, pull the repository down locally:
 
 ```bash
-git clone git remote add origin https://github.com/BenDMyers/ARIA_Toggle_Example.git
+git clone https://github.com/BenDMyers/ARIA_Toggle_Example.git
 ```
 
 Open up `index.html` in your browser.
