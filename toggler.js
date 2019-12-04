@@ -1,10 +1,11 @@
+const toggleCheckbox = document.querySelector('.toggle-switch-semantic input');
 const toggler = document.querySelector('.toggle-switch');
 const switchStatus = document.querySelector('.status');
 
 let switchIsActive = false;
 
 // Called whenever you click on the toggle
-function handleClick() {
+function handleChange() {
     // Causes page to alternate between light and dark mode
     document.body.classList.toggle('dark-mode');
 
@@ -16,14 +17,4 @@ function handleClick() {
     switchStatus.innerHTML = switchIsActive ? 'on' : 'off';
 }
 
-// Adds keyboard events to the toggle
-toggler.addEventListener('keydown', function (event) {
-    if (event.key === ' ' || event.key === 'Enter') {
-        // Prevents unintentional form submissions, page scrolls, the like
-        event.preventDefault();
-
-        handleClick();
-    }
-});
-
-toggler.onclick = handleClick;
+toggleCheckbox.onchange = handleChange;

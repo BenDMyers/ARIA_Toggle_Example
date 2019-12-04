@@ -10,12 +10,18 @@
     </head>
     <body>
         <div id="container">
-            <span
-                tabindex="0"
-                class="toggle-switch"
-            >
-                <span class="toggle-knob"></span>
-            </span>
+            <label class="toggle-switch-semantic">
+                <span class="visually-hidden">
+                    Use dark mode
+                </span>
+                <input
+                    type="checkbox"
+                    class="visually-hidden"
+                />
+                <span class="toggle-switch">
+                    <span class="toggle-knob"></span>
+                </span>
+            </label>
             <div>
                 Dark mode is <span class="status">off</span>
             </div>
